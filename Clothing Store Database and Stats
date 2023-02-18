@@ -1,0 +1,27 @@
+--create a grocery store database
+
+CREATE table STORE(id INTEGER Primary Key, Apparel text, Price integer, Aisle integer, Material text);
+
+INSERT INTO STORE Values (1, "Dress", 20, 4, "Cotton");
+INSERT INTO STORE Values (2, "Skirt", 15, 2, "Rayon"); 
+INSERT INTO STORE Values (3, "Blouse", 35, 2, "Polyester");
+INSERT INTO STORE Values (4, "Romper", 15, 4, "Cotton"); 
+INSERT INTO STORE Values (5, "Shorts", 10, 5, "Denim"); 
+INSERT INTO STORE Values (6, "Jeans", 20, 5, "Denim"); 
+INSERT INTO STORE Values (7, "Pants", 18, 5, "Cotton");
+INSERT INTO STORE Values (8, "Tshirt", 15, 2, "Cotton"); 
+INSERT INTO STORE Values (9, "Sweater", 20, 3, "Wool");
+INSERT INTO STORE Values (10, "Cardigan", 18, 3, "Cotton");
+INSERT INTO STORE Values (11, "Crewneck", 15, 3, "Cotton"); 
+INSERT INTO STORE Values (12, "Jacket", 25, 5, "Denim"); 
+INSERT INTO STORE Values (13, "Blazer", 18, 2, "Cotton"); 
+INSERT INTO STORE Values (14, "Crop Top", 10, 2, "Cotton"); 
+INSERT INTO STORE Values (15, "Tunic", 15, 2, "Rayon"); 
+
+
+--display the database order by price
+SELECT * FROM STORE WHERE Price > 1 ORDER BY Price asc
+
+
+--display the database if item is priced under $20
+SELECT * FROM STORE WHERE Price < 20;
